@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/HomePage'
-import Project from './components/project'
+import Project from './components/Project'
 import Navbar from './components/Navbar'
 import Skills from './components/Skills'
 import About from './components/About'
