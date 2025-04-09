@@ -20,7 +20,7 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
         <div className="relative z-10 items-center justify-center flex flex-col space-y-5">
           <motion.img
-            src="/X.jpeg"
+            src="/user.png"
             alt="Profile"
             className="w-40 h-40 rounded-full shadow-lg mb-4"
             whileHover={{ scale: 1.1 }}
