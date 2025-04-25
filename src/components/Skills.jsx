@@ -36,7 +36,7 @@ const Skills = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex h-screen flex-col items-center justify-center text-center px-6"
+        className="flex md:h-screen flex-col items-center justify-center text-center px-6"
       >
         <h2 className="text-4xl tracking-wider font-bold mb-6">Skills</h2>
 
