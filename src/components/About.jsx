@@ -15,18 +15,18 @@ const About = () => {
       <h2 className="text-4xl font-bold mb-6 text-lime-600">Contact Me</h2>
 
       <p className="text-gray-600 font-semibold mb-10 max-w-xl">
-        Have a project or just want to say hi? Fill out the form or reach out
+        Have a project or just want to say hi?  Reach out
         via email or social media.
       </p>
 
       {/* Contact Info */}
       <div className="flex flex-col md:flex-row gap-8 mb-12 text-gray-700">
         <div className="flex items-center gap-2">
-          <FaEnvelope className="text-lime-600 text-xl" />
+          <FaEnvelope className="text-lime-600 text-xl animate-bounce " />
           <span>kaahenjoroge@gmail.com</span>
         </div>
         <div className="flex items-center gap-2">
-          <FaPhoneAlt className="text-lime-600 text-xl" />
+          <FaPhoneAlt className="text-lime-600 text-xl animate-pulse" />
           <span>+254 743080538</span>
         </div>
         <div className="flex items-center gap-2">
@@ -37,29 +37,7 @@ const About = () => {
       </div>
 
       {/* Contact Form */}
-      <form className="w-full max-w-xl space-y-4">
-        <input
-          type="text"
-          placeholder="Your Name"
-          className="w-full bg-green-50 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500"
-        />
-        <input
-          type="email"
-          placeholder="Your Email"
-          className="w-full bg-green-50 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500"
-        />
-        <textarea
-          rows="5"
-          placeholder="Your Message"
-          className="w-full bg-green-50 px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-500"
-        ></textarea>
-        <button
-          type="submit"
-          className="bg-lime-600 hover:bg-lime-700 text-white px-6 py-3 rounded-lg transition"
-        >
-          Send Message
-        </button>
-      </form>
+
     </motion.section>
   );
 };
