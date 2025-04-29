@@ -89,7 +89,7 @@ const Navbar = () => {
   
           <motion.div
             whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+            whileTap={{ scale: 0.9 }} 
           >
             <Link to="/skills" className="hover:text-gray-300 transition duration-300">
               Skills
