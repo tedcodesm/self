@@ -36,9 +36,9 @@ const Skills = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex md:h-screen flex-col items-center justify-center text-center px-6"
+        className="flex  md:h-screen flex-col items-center justify-center text-center px-6"
       >
-        <h2 className="text-4xl tracking-wider font-bold mb-6 md:mt-14">Skills</h2>
+        <h2 className="text-4xl tracking-wider font-bold mb-6">Skills</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-xl">
           {skills.map(({ Icon, name, level, color }, index) => (
