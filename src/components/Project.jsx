@@ -21,12 +21,20 @@ const Project = () => {
         <h2 className="text-3xl font-bold"> Major Projects</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[{
-            title: "Ecommerce",
-            description: "A feature-rich eCommerce platform built with the MERN stack, offering a seamless shopping experience with authentication, product listings, and real-time tracking.",
+            title: "Ecommerce using stripe",
+            description: "An advanced eCommerce application developed using the MERN stack The platform supports user authentication, and real-time order tracking, with flexible and secure payment processing powered by stripe to cater to local and international transactions.",
+            link: "https://intergration.onrender.com/"
+          }, {
+            title: "Ecommerce using pesapal",
+            description: "A feature-rich eCommerce platform built with the MERN stack, offering a seamless shopping experience with authentication, product listings, real-time order tracking, and secure payments integrated via PesaPal.",
             link: "https://ecommerce-vtt3.onrender.com/"
           }, {
+            title: "Stream App",
+            description: "A real-time communication platform designed for seamless video calling and instant messaging. This application enables users to connect through high-quality video streams and low-latency chat in a secure, responsive interface.",
+            link: "https://strm-y7c5.onrender.com/"
+          }, {
             title: "ChatApp",
-            description: "A real-time chat application using Socket.io, React, and Node.js. It supports private messaging, group chats, and real-time notifications.",
+            description: "A real-time chat application using Socket.io, React, and Node.js. It supports private messaging, and real-time notifications.",
             link: "https://fullstack-chatapp-12-hbox.onrender.com/"
           },  {
             title: "Job Application",
