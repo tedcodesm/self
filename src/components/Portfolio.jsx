@@ -1,13 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {Link} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
   return (
     <div className="min-h-screen text-white font-sans">
-     
-
       {/* About Section */}
       <motion.section
         id="about"
@@ -34,14 +31,20 @@ const Portfolio = () => {
             real-time chat apps, I bring ideas to life with clean code and
             modern design. Let's build something amazing together!"
           </p>
+         <a
+  href="/resume.pdf"
+  download
+  className="bg-lime-600 px-4 py-2 rounded-full text-white hover:bg-lime-700 transition"
+>
+  Download Resume
+</a>
+
         </div>
       </motion.section>
 
       {/* Projects Section */}
-     
 
       {/* Skills Section */}
-   
     </div>
   );
 };
