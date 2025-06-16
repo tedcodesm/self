@@ -22,15 +22,19 @@ const Project = () => {
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[{
             title: "Ecommerce using stripe",
-            description: "An advanced eCommerce application developed using the MERN stack The platform supports user authentication, and real-time order tracking, with flexible and secure payment processing powered by stripe to cater to local and international transactions.",
+            description: "An advanced eCommerce application developed using the MERN stack The platform supports user authentication, and real-time order tracking, with flexible and secure payment processing powered by stripe ",
             link: "https://intergration.onrender.com/"
           }, {
             title: "Ecommerce using pesapal",
             description: "A feature-rich eCommerce platform built with the MERN stack, offering a seamless shopping experience with authentication, product listings, real-time order tracking, and secure payments integrated via PesaPal.",
             link: "https://ecommerce-vtt3.onrender.com/"
           }, {
+            title: "Bookstore",
+            description: "React Native and Expo that allows users to search, save, and read books directly within the app. Integrated Text-to-Speech functionality for accessibility and enhanced user experience.",
+            link: "https://github.com/tedcodesm/store_book"
+          }, {
             title: "Stream App",
-            description: "A real-time communication platform designed for seamless video calling and instant messaging. This application enables users to connect through high-quality video streams and low-latency chat in a secure, responsive interface.",
+            description: "A real-time communication platform designed for seamless video calling and instant messaging. This application enables users to connect through high-quality video streams and low-latency chat ",
             link: "https://strm-y7c5.onrender.com/"
           }, {
             title: "ChatApp",
