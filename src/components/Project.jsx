@@ -52,7 +52,7 @@ const Project = () => {
               transition={{ duration: 0.5, delay: index * 0.3 }}
               className="bg-gradient-to-r from-lime-400 to-black h-80 p-4 relative space-y-4 rounded-lg shadow-lg"
             >
-              <h3 className="text-xl font-bold">{project.title}</h3>
+              <h3 className="text-xl font-bold font-mono">{project.title}</h3>
               <p className="text-lg mt-2 max-w-[400px]">{project.description}</p>
               <Link to={project.link} className="text-neutral-400 bg-lime-700 absolute bg-opacity-50 bottom-5 py-1 right-5  px-4 rounded-full hover:bg-lime-900">
                 View Project

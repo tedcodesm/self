@@ -23,7 +23,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.1 }}
           />
           <h1 className="text-4xl font-bold">Hello, I'm Edward</h1>
-          <p className="mt-2 text-lg max-w-[600px]">
+          <p className="mt-2 text-lg max-w-[600px] font-serif">
             "I'm Edward, a passionate MERN Stack developer specializing in
             building scalable web and mobile applications. With expertise in
             React, Node.js, MongoDB, and Express, I create efficient and
@@ -32,7 +32,7 @@ const Portfolio = () => {
             modern design. Let's build something amazing together!"
           </p>
          <a
-  href="/resume.pdf"
+  href="/Edward__kaahe.pdf"
   download
   className="bg-lime-600 px-4 py-2 rounded-full text-white hover:bg-lime-700 transition"
 >
