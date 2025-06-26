@@ -32,7 +32,7 @@ const Portfolio = () => {
             modern design. Let's build something amazing together!"
           </p>
          <a
-  href="/Edward__kaahe.pdf"
+  href="/Resume_.pdf"
   download
   className="bg-lime-600 px-4 py-2 rounded-full text-white hover:bg-lime-700 transition"
 >
