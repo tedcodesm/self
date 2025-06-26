@@ -30,7 +30,7 @@ const Project = () => {
             link: "https://ecommerce-vtt3.onrender.com/"
           }, {
             title: "Bookstore",
-            description: "React Native and Expo that allows users to search, save, and read books directly within the app. Integrated Text-to-Speech functionality for accessibility and enhanced user experience.",
+            description: "React Native and Expo that allows users to search, save, and read books directly within the app. Integrated Text-to-Speech and AI summary functionality for accessibility and enhanced user experience.",
             link: "https://github.com/tedcodesm/store_book"
           }, {
             title: "Stream App",
