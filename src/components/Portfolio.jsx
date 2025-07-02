@@ -26,8 +26,8 @@ const Portfolio = () => {
           <p className="mt-2 text-lg max-w-[600px] font-serif">
             "I'm Edward, a passionate MERN Stack developer specializing in
             building scalable web and mobile applications. With expertise in
-            React, Node.js, MongoDB, and Express, I create efficient and
-            user-friendly digital solutions. From eCommerce platforms to
+            React Native, React, Node.js, MongoDB, and Express, I create efficient and
+            user-friendly digital solutions. From eCommerce platforms and BookStore applications to
             real-time chat apps, I bring ideas to life with clean code and
             modern design. Let's build something amazing together!"
           </p>
