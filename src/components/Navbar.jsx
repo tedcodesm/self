@@ -24,7 +24,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link to="/" className="hover:text-gray-300 transition duration-300">
+          <Link to="/" className="hover:text-gray-300 font-serif  transition duration-300">
             About 
           </Link>
         </motion.div>
@@ -33,7 +33,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link to="/projects" className="hover:text-gray-300 transition duration-300">
+          <Link to="/projects" className="hover:text-gray-300 font-serif  transition duration-300">
             Projects
           </Link>
         </motion.div>
@@ -42,7 +42,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link to="/skills" className="hover:text-gray-300 transition duration-300">
+          <Link to="/skills" className="hover:text-gray-300 font-serif  transition duration-300">
             Skills
           </Link>
         </motion.div>
@@ -51,7 +51,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link to="/contacts" className="hover:text-gray-300 transition duration-300">
+          <Link to="/contacts" className="hover:text-gray-300 font-serif  transition duration-300">
             Contact
           </Link>
         </motion.div>
