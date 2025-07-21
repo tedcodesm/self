@@ -23,7 +23,7 @@ const Portfolio = () => {
             whileHover={{ scale: 1.1 }}
           />
           <h1 className="text-4xl font-bold">Hello, I'm Edward</h1>
-          <p className="mt-2 text-lg max-w-[600px] font-serif">
+          <p className="mt-2 text-lg xl:text-xl max-w-[600px] font-serif">
             "I'm Edward, a passionate MERN Stack developer specializing in
             building scalable web and mobile applications. With expertise in
             React Native, React, Node.js, MongoDB, and Express, I create efficient and
