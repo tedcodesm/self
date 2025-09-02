@@ -18,7 +18,7 @@ const Project = () => {
         transition={{ duration: 1, delay: 0.5 }}
         className="py-16 flex flex-col items-center justify-center text-neutral-200 text-center px-6"
       >
-        <h2 className="text-3xl font-bold"> Major Projects</h2>
+        <h2 className="text-3xl font-extrabold font-serif"> Major Projects</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[{
             title: "Ecommerce using stripe",
@@ -60,7 +60,7 @@ const Project = () => {
             </motion.div>
           ))}
         </div>
-      <h1 className="font-bold text-white text-3xl pt-8">Test Projects</h1>
+      <h1 className="font-extrabold font-serif text-white text-3xl pt-8">Test Projects</h1>
 
       <Hotel/>
         <div className="mt-6 grid grid-cols-1 pt-8 sm:px-[100px] md:px-[250px]  gap-6">
