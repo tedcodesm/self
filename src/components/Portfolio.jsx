@@ -22,16 +22,19 @@ const Portfolio = () => {
             className="w-40 h-40 rounded-full object-cover shadow-lg mb-4"
             whileHover={{ scale: 1.1 }}
           />
-          <h1 className="text-4xl font-bold font-mono">Hello, I'm Edward</h1>
-          <p className="mt-2 text-lg xl:text-xl max-w-[600px] font-serif">
-            I'm Edward, a passionate MERN Stack Developer with expertise in
-            building scalable web and mobile applications. Skilled in React
-            Native, React, Node.js, Express, and MongoDB, I focus on delivering
-            efficient, user-friendly, and modern digital solutions. From
-            eCommerce platforms and bookstore applications to real-time chat
-            systems, I transform ideas into reality with clean code and
-            thoughtful design. Let’s collaborate to create something amazing!
-          </p>
+         <h1 className="typewriter text-4xl font-bold font-mono">
+  Hello, I'm Edward
+</h1>
+
+<p className="mt-2 text-lg xl:text-xl max-w-[600px] font-serif">
+  I'm Edward, a passionate MERN Stack Developer with expertise in building
+  scalable web and mobile applications. Skilled in React Native, React, Node.js,
+  Express, and MongoDB, I focus on delivering efficient, user-friendly, and
+  modern digital solutions. From eCommerce platforms and bookstore applications
+  to real-time chat systems, I transform ideas into reality with clean code and
+  thoughtful design. Let’s collaborate to create something amazing!
+</p>
+
           <a
             href="/Resume_.pdf"
             download
@@ -46,7 +49,7 @@ const Portfolio = () => {
               RESUME
             </p>
             <p className="absolute z-40 top-1/2 left-1/2 bg-gradient-to-r from-green-700 to-lime-700 bg-clip-text text-transparent -translate-x-1/2 translate-y-full h-full w-full transition-all duration-300 group-hover:-translate-y-[40%] tracking-widest font-extrabold">
-              READY
+              Download
             </p>
             <svg
               className="absolute w-full h-full scale-x-125 rotate-180 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group-hover:animate-none animate-pulse group-hover:-translate-y-[45%] transition-all duration-300"

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #fff;
+    width: 0;
+    animation: typing 2.8s steps(20), blink .7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 20ch; } /* 'Hello, I'm Edward' = 20 characters */
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  

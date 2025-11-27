@@ -11,7 +11,7 @@ const About = () => {
       transition={{ duration: 0.8 }}
       className="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-gradient-to-r from-blue-100 via-lime-100 to-green-200 text-center"
     >
-      <h2 className="text-4xl md:text-5xl font-serif font-extrabold mb-6 text-lime-700">
+      <h2 className="text-4xl typewriter md:text-5xl font-serif font-extrabold mb-6 text-lime-700">
         Get In Touch
       </h2>
 
