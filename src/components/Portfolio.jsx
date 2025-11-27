@@ -22,7 +22,7 @@ const Portfolio = () => {
             className="w-40 h-40 rounded-full object-cover shadow-lg mb-4"
             whileHover={{ scale: 1.1 }}
           />
-         <h1 className="typewriter text-4xl font-bold font-mono">
+        <h1 className="typewriter text-4xl font-bold font-mono">
   Hello, I'm Edward
 </h1>
 
@@ -34,6 +34,7 @@ const Portfolio = () => {
   to real-time chat systems, I transform ideas into reality with clean code and
   thoughtful design. Let’s collaborate to create something amazing!
 </p>
+
 
           <a
             href="/Resume_.pdf"
