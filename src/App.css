@@ -3,22 +3,54 @@
 @tailwind utilities;
 
 .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #fff;
-    width: 0;
-    animation: typing 2.8s steps(20) forwards, hideCursor 0.1s linear 3s forwards;
-  }
-  
-  /* typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 20ch; }
-  }
-  
-  /* remove cursor after typing finishes */
-  @keyframes hideCursor {
-    to { border-right-color: transparent; }
-  }
-  
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  width: 0;
+  animation: typing 2.8s steps(20) forwards, hideCursor 0.1s linear 3s forwards;
+}
+
+/* typing effect */
+@keyframes typing {
+  from { width: 0ch; }
+  to { width: 17ch; } /* 20 = number of characters */
+}
+
+/* remove cursor after typing finishes */
+@keyframes hideCursor {
+  to { border-right-color: transparent; }
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  animation: shine 2s linear infinite;
+}
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.bg-animated {
+  background: linear-gradient(270deg, #2d0391, #1c117e, #1d3d5a);
+  background-size: 600% 600%;
+  animation: bgShift 20s ease infinite;
+}
+
   

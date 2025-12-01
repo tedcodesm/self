@@ -1,114 +1,85 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion as Motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
-import * as Icon from "react-feather"
+import * as Icon from "react-feather";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-   const [isOpen,setIsOpen] = useState(false);
-  
+  const menuVariants = {
+    hidden: { y: "-100%", opacity: 0 },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.3, ease: "easeOut" } },
+  };
 
-   const Showmenu = () =>{
-    setIsOpen(!isOpen)
-   }
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
-    <motion.div
-      initial={{ y: -50, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="text-white"
-    >
-      {/* Navigation */}
-      <nav className="fixed bg-opacity-60 top-0 hidden  w-full bg-lime-700 gap-16 shadow-md p-4 md:flex justify-center space-x-6 z-50">
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link to="/" className="hover:text-gray-300 font-serif  transition duration-300">
-            About 
+    <Motion.div className="fixed top-0 w-full z-50 text-white">
+      {/* Desktop Navbar */}
+      <nav className="hidden md:flex justify-center items-center gap-16 w-full bg-lime-700 bg-opacity-80 backdrop-blur-md shadow-md py-4 text-white">
+        <Motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link to="/" className="hover:text-gray-300 font-serif transition duration-300">
+            About
           </Link>
-        </motion.div>
+        </Motion.div>
 
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link to="/projects" className="hover:text-gray-300 font-serif  transition duration-300">
+        <Motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link to="/projects" className="hover:text-gray-300 font-serif transition duration-300">
             Projects
           </Link>
-        </motion.div>
+        </Motion.div>
 
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link to="/skills" className="hover:text-gray-300 font-serif  transition duration-300">
+        <Motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link to="/skills" className="hover:text-gray-300 font-serif transition duration-300">
             Skills
           </Link>
-        </motion.div>
+        </Motion.div>
 
-        <motion.div
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <Link to="/contacts" className="hover:text-gray-300 font-serif  transition duration-300">
+        <Motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link to="/contacts" className="hover:text-gray-300 font-serif transition duration-300">
             Contact
           </Link>
-        </motion.div>
+        </Motion.div>
       </nav>
-      <nav className="md:hidden flex">
-        {
-          isOpen ?(
-            <Icon.X size={24} color="white" onClick={Showmenu}/>
-          ):(
-            <Icon.Menu size={24} color="white" onClick={Showmenu}/>
 
-          )
-        }
-      </nav>
-      {
-        isOpen && (
-          <nav className="fixed bg-opacity-60 top-0 flex fixed  absolute left-8 top-1 text-black font-semibold rounded-b-xl bg-lime-100 gap-4 shadow-md items-start p-4 md:hidden flex-col justify-center z-50">
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Link to="/" className="hover:text-gray-300 transition duration-300">
-              About 
-            </Link>
-          </motion.div>
-  
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Link to="/projects" className="hover:text-gray-300 transition duration-300">
-              Projects
-            </Link>
-          </motion.div>
-  
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }} 
-          >
-            <Link to="/skills" className="hover:text-gray-300 transition duration-300">
-              Skills
-            </Link>
-          </motion.div>
-  
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <Link to="/contacts" className="hover:text-gray-300 transition duration-300">
-              Contact
-            </Link>
-          </motion.div>
-        </nav>
-        ) 
-      }
+      {/* Mobile Navbar Toggle */}
+      <div className="md:hidden flex justify-end p-4 bg-lime-700 bg-opacity-80 backdrop-blur-md shadow-md">
+        {isOpen ? (
+          <Icon.X size={28} color="white" onClick={toggleMenu} />
+        ) : (
+          <Icon.Menu size={28} color="white" onClick={toggleMenu} />
+        )}
+      </div>
 
-    </motion.div>
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <Motion.nav
+            variants={menuVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            className="fixed top-0 left-0 w-full h-screen bg-lime-100 bg-opacity-95 backdrop-blur-md flex flex-col items-center justify-center gap-8 text-lg font-semibold text-gray-800 z-40"
+          >
+            <Motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={toggleMenu}>
+              <Link to="/" className="hover:text-gray-700 transition duration-300">About</Link>
+            </Motion.div>
+
+            <Motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={toggleMenu}>
+              <Link to="/projects" className="hover:text-gray-700 transition duration-300">Projects</Link>
+            </Motion.div>
+
+            <Motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={toggleMenu}>
+              <Link to="/skills" className="hover:text-gray-700 transition duration-300">Skills</Link>
+            </Motion.div>
+
+            <Motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} onClick={toggleMenu}>
+              <Link to="/contacts" className="hover:text-gray-700 transition duration-300">Contact</Link>
+            </Motion.div>
+          </Motion.nav>
+        )}
+      </AnimatePresence>
+    </Motion.div>
   );
 };
 
