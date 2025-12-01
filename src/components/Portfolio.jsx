@@ -17,32 +17,13 @@ const Portfolio = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-md"></div>
         <div className="relative z-10 items-center justify-center flex flex-col space-y-5">
         <div className="relative w-40 h-40 rounded-full overflow-hidden">
-        <motion.img
-  src="/graduation.jpg" // Normal picture
-  alt="Profile"
-  className="w-40 h-40 rounded-full object-cover shadow-lg mb-4"
-  animate={{
-    scale: [1, 1.05, 0.98, 1],
-    x: [0, 3, -3, 0],
-    y: [0, -2, 2, 0],
-    rotate: [0, 1, -1, 0],
-    filter: [
-      "grayscale(0%) contrast(100%) brightness(100%)", // normal
-      "grayscale(100%) contrast(200%) brightness(120%) sepia(40%) hue-rotate(90deg) saturate(200%)", // robotic/metallic
-      "grayscale(0%) contrast(100%) brightness(100%)" // back to normal
-    ]
-  }}
-  transition={{
-    duration: 3,      // total animation time
-    repeat: Infinity, // loops forever
-    repeatType: "loop",
-    ease: "easeInOut"
-  }}
-/>
+  <img
+    src="/graduation.jpg"
+    alt="Profile"
+    className="w-40 h-40 rounded-full object-cover shadow-lg mb-4"
+  />
 
-
-
-  {/* metallic shimmer line */}
+  {/* Metallic shimmer line */}
   <motion.div
     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent"
     animate={{ x: ["-150%", "150%"] }}
@@ -53,6 +34,7 @@ const Portfolio = () => {
     }}
   />
 </div>
+
 
         <h1 className="typewriter text-4xl font-bold font-mono">
   Hello, I'm Edward
